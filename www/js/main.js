@@ -87,8 +87,8 @@
 					"<td>" + key + "</td>" +
                             //"<td>" + value + "</td>" + 
 							//"<td>" + office + "</td>" + 
-							"<td style='text-align: center; vertical-align:middle'><a href='mailto:=" + emails + "'><div class='appendlink'><i class='fa fa-envelope'></i></div></a></td>" + 
-							"<td style='text-align: center; vertical-align:middle'><a rel='external' href='tel:=" + tel + "'><div class='appendlink'><i class='fa fa-phone-square'></i></div></a></td>" + 
+							"<td style='text-align: center; vertical-align:middle'><a href='mailto:" + emails + "'><div class='appendlink'><i class='fa fa-envelope'></i></div></a></td>" + 
+							"<td style='text-align: center; vertical-align:middle'><a href='tel:" + tel + "'><div class='appendlink'><i class='fa fa-phone-square'></i></div></a></td>" + 
 							"<td style='text-align: center; vertical-align:middle'><a rel='external' href='staff-profile.html?id=" + key + "'><div class='appendlink'><i class='fa fa-caret-square-o-right'></i></div></a></td></tr>"
 							////
                            );
