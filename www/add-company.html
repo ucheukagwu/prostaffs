@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+       <title>Staffs Directory</title>
+                        
+        <!--------theme-------->        
+<link href="ext/framework.css" rel="stylesheet" type="text/css">
+<link href="ext/style.css" rel="stylesheet" type="text/css">
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+<link href="ext/animate.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="ext/jquery.js"></script>
+<script type="text/javascript" src="ext/jqueryui.js"></script>
+<script type="text/javascript" src="ext/framework-plugins.js"></script>
+<script type="text/javascript" src="ext/custom.js"></script>
+
+			<!-------- end ------>   
+        
+    <script type="text/javascript" src="js/modernizr-1.6.js"></script>    
+    <script type="text/javascript" src="js/main.js"></script>
+
+      <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script src="SpryAssets/SpryValidationTextarea.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>      
+         
+  <script src="SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<link href="SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css">
+<link href="SpryAssets/SpryValidationTextarea.css" rel="stylesheet" type="text/css">
+
+<script type="text/jscript">
+  // ADD COMPANY INFO
+        function setComp() {
+			
+			var key = "company";						
+            var com_name = $("#keyComp").val();
+            var com_profile = $("#valueComp").val();
+			var value = com_name +";;;"+ com_profile;
+
+            if (Modernizr.localstorage) {
+                localStorage.setItem(key, value);
+            }
+
+        }
+</script>
+
+</head>
+
+<body class="dual-sidebar"> 
+        
+<div id="header-fixed" class="header-style-1">
+    <a class="header-1 open-left-sidebar" href="#"><i class="fa fa-navicon"></i></a>
+    <a class="header-logo" href="index.html"><img src="images/logo.png" alt="img"></a>
+    <a class="header-2 open-right-sidebar" href="#"><i class="fa fa-user"></i></a>
+</div>
+    
+            
+<div class="all-elements">
+ <div class="snap-drawers">
+        <div class="snap-drawer snap-drawer-left">     
+   <div id="leftmenu">    </div>
+</div>
+        
+          
+        <!--Right Sidebar -->
+        <div class="snap-drawer snap-drawer-right">
+         <div id="rightmenu">    </div>       
+</div>
+        
+        
+        <div id="content" class="snap-content" style="">
+            <div class="content">
+            <div class="header-clear"></div>
+            
+            <div class="center_div">
+         
+           <div class="main-section">   
+<div class="login-form">
+                <p id="welcomeMessage"></p>
+					<h2>Company profile</h2>
+		<span class="spans"></span>
+					<form class="login-form">
+					  <h4>Company Name</h4>
+					  <span id="sprytextfield1">
+					  <input type="text" id="keyComp"  placeholder="Company LTD">
+					  <span class="textfieldRequiredMsg" id="s_validate">Company name is compulsory</span></span>
+					  <h4>Company Profile</h4>
+					  <span id="sprytextarea1">
+					  <textarea id="valueComp" placeholder="About Company LTD"></textarea>
+					  <span class="textareaRequiredMsg" id="s_validate">Company profile is compulsory.</span></span>
+					 <br> <input type="submit" class="button button-blue blue-3d" value="Save Profile" onClick="setComp()">
+					</form>
+             </div> 
+              </div>
+        
+        </div>
+        </div>
+                
+<div id="footerpage">    </div>
+<script type="text/javascript">
+var sprytextfield1 = new Spry.Widget.ValidationTextField("sprytextfield1", "none", {validateOn:["blur"]});
+var sprytextarea1 = new Spry.Widget.ValidationTextarea("sprytextarea1", {validateOn:["blur"]});
+</script>
+</body></html>

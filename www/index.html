@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+       <title>Staffs Directory</title>
+                        
+        <!--------theme-------->        
+<link href="ext/framework.css" rel="stylesheet" type="text/css">
+<link href="ext/style.css" rel="stylesheet" type="text/css">
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+<link href="ext/animate.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="ext/jquery.js"></script>
+<script type="text/javascript" src="ext/jqueryui.js"></script>
+<script type="text/javascript" src="ext/framework-plugins.js"></script>
+<script type="text/javascript" src="ext/custom.js"></script>
+
+			<!-------- end ------>     
+        
+    <script type="text/javascript" src="js/modernizr-1.6.js"></script>    
+    <script type="text/javascript" src="js/main.js"></script>
+    
+    <script>
+	    //// CHECK FOR COMPANY NAME
+   if(localStorage.getItem("company") === null) {
+     alert("Please enter your company name and profile to proceed.");
+     window.location = "add-company.html";
+}
+</script>
+
+      <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>    
+  
+</head>
+
+<body class="dual-sidebar"> 
+
+<div id="preloader" style="display: none;">
+	<div id="status" style="display: none;">
+        <div class="preloader-logo"></div>
+        <h3 class="center-text">Welcome</h3>
+        <p class="center-text smaller-text">
+            We're loading the content, give us a second. This won't take long!
+        </p>
+    </div>
+</div>
+        
+<div id="header-fixed" class="header-style-1">
+    <a class="header-1 open-left-sidebar" href="#"><i class="fa fa-navicon"></i></a>
+    <a class="header-logo" href="index.html"><img src="images/logo.png" alt="img"></a>
+    <a class="header-2 open-right-sidebar" href="#"><i class="fa fa-user"></i></i></a>
+</div>
+    
+            
+<div class="all-elements">
+ <div class="snap-drawers">
+        <div class="snap-drawer snap-drawer-left">     
+   <div id="leftmenu">    </div>
+      
+      
+            
+        </div>
+        
+          
+        <!--Right Sidebar -->
+        <div class="snap-drawer snap-drawer-right">
+         <div id="rightmenu">    </div>
+       
+          </div>
+        
+        
+        <div id="content" class="snap-content" style="">
+            <div class="content">
+            <div class="header-clear"></div>
+            
+            <div class="center_div">
+        <table id="localTable" class="" style="float:none">
+           <!-- <thead>
+                <tr>
+                    <th>Fullname</th>
+                    <th>Position</th>
+                    <th>Phone number</th>
+                    <th>Email
+                    <th>Profile</th></th>
+                    <th></th>
+                </tr>
+            </thead>  --->
+            <tbody>
+            </tbody>
+        </table>  
+        
+        
+        
+        
+        </div>
+        </div>
+                
+             <div id="footerpage">    </div>
+              
+</body></html>
