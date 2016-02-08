@@ -66,10 +66,6 @@
   <access origin="tel:*" launch-external="true"/>
   <access origin="mailto:*" launch-external="yes" />
  <!-- <access origin="*" browserOnly="true"/> --->
- 
- <gap:platform name="ios" />
-<gap:platform name="android" />
-<gap:platform name="winphone" />
   
   <platform name="android">
     <allow-intent href="market:*"/>
@@ -78,9 +74,6 @@
     <allow-intent href="itms:*"/>
     <allow-intent href="itms-apps:*"/>
   </platform>
-  
-  <platform name="windows">
-        <preference name="BackgroundColor" value="turquoise"/>
-    </platform>
+ 
 	
 </widget>
